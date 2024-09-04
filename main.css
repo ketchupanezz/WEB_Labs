@@ -1,0 +1,26 @@
+ul {
+    list-style: none
+}
+
+img {
+    height: 20px;
+}
+
+.footer-li{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+footer {
+    background: linear-gradient(rgb(156, 234, 186), rgb(60, 125, 96));
+}
+
+.footer-ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    align-items: center;
+    padding: 10px 2px;
+    
+}
