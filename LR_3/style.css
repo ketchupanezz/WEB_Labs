@@ -20,7 +20,7 @@ h1 {
 
 }
 
-section > div {
+form {
     display: flex;
     flex-direction: column;
     gap: 32px;
