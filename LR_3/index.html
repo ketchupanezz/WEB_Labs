@@ -8,47 +8,54 @@
 </head>
 <body>
     <form action="" method="get">
+        <h1>Регистрация</h1>
         <fieldset>
-            <legend>Регистрация</legend>
+            <legend>Основные данные для входа</legend>
             <p>
-              <label for="login">Введите логин:</label>
-              <input type="text" name="login" id="name" required>
+            <label for="login">Введите логин:</label>
+            <input type="text" name="login" id="name" placeholder="Liya_2005" required>
             </p>
             <p>
-              <label for="password">Введите пароль:</label>
-              <input type="password" name="password" id="password" required>
+            <label for="password">Введите пароль:</label>
+            <input type="password" name="password" id="password" minlength="6" placeholder="Не менее 6 символов" required>
             </p>
+        </fieldset>
             <p>
               <label for="email">Введите email:</label>
-              <input type="email" name="email" id="email" required>
-            </p>
-            <p>
-              <label for="gender">Выберите пол:</label>
-              <input type="radio" name="gender" id="male" required>М</input>
-              <input type="radio" name="gender" id="female" required>Ж</input>
+              <input type="email" name="email" id="email" placeholder="user@mail.com" required>
             </p>  
             <p>
-                <label for="phone">Введите телефон:</label>
-              <input type="tel" name="phone" id="phone" required>
+                <label for="phone">Введите номер телефона:</label>
+              <input type="tel" name="phone" id="phone" placeholder="+375xxxxxxxxx" required>
             </p>
             <p>
                 <label for="date">Выберите дату рождения:</label>
                 <input type="date" name="date" id="date" required>
             </p>
-            <p>
-                <label for="file">Загрузите аватарку</label>
-                <input type="file" name="avatar" id="avatar" required>
-            </p>
-            <p>
-                <label for="agree">Согласие на обработку персональных данных:</label>
-                <input type="checkbox" name="agree" id="agree" required>
-            </p>
-            <p>
-                <label for="reset">Очистить форму</label>
-                <input type="reset" value="Очистить" id="reset">
-            </p>
+            <div class="end-of-form">
+                <p >
+                    <label for="gender" class="radio">Выберите пол:
+                        <input type="radio" name="gender" id="male" required>М</input>
+                        <input type="radio" name="gender" id="female" required>Ж</input>
+                    </label>
+                </p>
+                <p>
+                    <label for="file">Загрузите аватарку:</label>
+                    <input class="file" type="file" name="avatar" id="avatar" required>
+                    <label for="avatar" class="custom-file-button">Выбрать файл</label>
+                </p>
+                <p>
+                    <label for="agree">Согласие на обработку персональных данных:</label>
+                    <input name="agree" type="checkbox" id="agree" required>
+                </p>
+            </div>    
+            
+        <div class="buttons"> 
             <button type="submit">Отправить</button>
-        </fieldset>
+            <p>
+                <input type="reset" value="Очистить форму" id="reset" class="clear">
+            </p>  
+        </div>
     </form>
 </body>
 </html>

@@ -2,15 +2,7 @@ body {
     max-width: 819px;
     background-color: #f2f2f2;
     margin: 152px auto;
-}
-
-section {
-    /* padding: 20px; */
-    background-color: #ffffff;
     display: flex;
-    flex-direction: column;
-    gap: 42px;
-    border-radius: 15px;
     justify-content: center;
 }
 
@@ -23,5 +15,107 @@ h1 {
 form {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 2px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    max-width: 472px;
+    padding: 10px 50px 20px 50px;
+    
+}
+
+fieldset {
+    border-radius: 10px;
+}
+
+legend {
+    font-weight: bold;
+    text-align: left;
+}
+
+ p {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    /* border-radius: 7px; */
+    border: 1px solid rgba(66, 80, 102, 0.4);
+    border-radius: 5px;
+    padding: 6px;
+    box-shadow: 0 2px 4px 0 rgba(66, 80, 102, 0.1);
+   
+}
+
+.end-of-form > p{
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+    gap: 10px;
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+}
+
+.file {
+    display: none;
+}
+
+.custom-file-button {
+    background-color: rgb(129, 115, 89);
+    color: #ffffff;
+    border: none;
+    padding: 7px;
+    cursor: pointer;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+
+.custom-file-button:hover {
+    background-color: rgb(108, 93, 67);
+}
+
+.buttons {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 20px; 
+    
+}
+
+.clear {
+    background-color: rgb(44, 44, 44);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.clear:hover {
+    background-color: rgb(23, 23, 23);
+    transition: background-color 0.8s;
+}
+
+button {
+    background-color: rgb(129, 115, 89);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: rgb(108, 93, 67);
+    transition: background-color 0.8s;
 }
