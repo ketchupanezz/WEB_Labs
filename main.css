@@ -1,5 +1,23 @@
-ul {
-    list-style: none
+body {
+    background-color: rgb(236, 221, 191);
+}
+
+section > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    list-style: none;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+a:hover {
+    color: rgb(102, 82, 82);
 }
 
 img {
@@ -13,7 +31,7 @@ img {
 }
 
 footer {
-    background: linear-gradient(rgb(156, 234, 186), rgb(60, 125, 96));
+    background-color: antiquewhite;
 }
 
 .footer-ul {
