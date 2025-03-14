@@ -69,12 +69,64 @@
     })
     bigCardInf.append(bigColor);
 
+    const colors = Object.keys(selectedShirt.colors);
+    for (let i = 0; i < colors.length; i ++){
     const btnColor = createElement({
         elementName: 'button',
         className: 'btn-color',
-        inner: ''
+        inner: colors[i],
     });
+
+    switch (colors[i]) {
+        case 'white':
+            btnColor.style.backgroundColor = 'white';
+            btnColor.style.color = 'black';
+            btnColor.addEventListener('click', () => {
+                bigImg.src = `../${selectedShirt.colors.white.front}`;
+            });
+            break;
+        case 'pink':
+            btnColor.style.backgroundColor = 'pink';
+            btnColor.style.color = 'black';
+            btnColor.addEventListener('click', () => {
+                bigImg.src = `../${selectedShirt.colors.pink.front}`;
+            });
+            break;
+        case 'blue':
+            btnColor.style.backgroundColor = 'blue';
+            btnColor.addEventListener('click', () => {
+                bigImg.src = `../${selectedShirt.colors.blue.front}`;
+            });
+            break;
+        case 'red':
+            btnColor.style.backgroundColor = 'red';
+            btnColor.addEventListener('click', () => {
+                bigImg.src = `../${selectedShirt.colors.red.front}`;
+            });
+            break;
+        case 'green':
+            btnColor.style.backgroundColor = 'green';
+            btnColor.addEventListener('click', () => {
+                bigImg.src = `../${selectedShirt.colors.green.front}`;
+            });
+            break;
+        case 'yellow':
+            btnColor.style.backgroundColor = 'yellow';
+            btnColor.addEventListener('click', () => {
+                bigImg.src = `../${selectedShirt.colors.yellow.front}`;
+            });
+            break;
+        default:
+            btnColor.style.backgroundColor = 'gray';
+            btnColor.style.color = 'black';
+            btnColor.addEventListener('click', () => {
+                bigImg.src = `../${selectedShirt.colors.gray.front}`;
+            });
+    }
+
     bigColor.append(btnColor);
+    }
+    
 
 
     // IMG 
