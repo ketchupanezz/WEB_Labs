@@ -54,6 +54,9 @@
         inner: 'Front',
     });
     bigSide.append(front);
+    front.addEventListener('click', () => {
+        bigImg.src = `../${selectedShirt.default.front}`;
+    });
 
     const back = createElement({
         elementName: 'button',
@@ -61,6 +64,9 @@
         inner: 'Back',
     });
     bigSide.append(back);
+    back.addEventListener('click', () => {
+        bigImg.src = `../${selectedShirt.default.back}`;
+    });
 
     const bigColor = createElement({
         elementName: 'div',

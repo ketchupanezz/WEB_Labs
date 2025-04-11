@@ -1,0 +1,49 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+#movies-table {
+    width: 80%;
+    max-width: 600px;
+}
+
+.movies-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.movies-table thead tr {
+    background-color: #3498db;
+    color: white;
+    text-align: left;
+}
+
+.movies-table th,
+.movies-table td {
+    padding: 12px 15px;
+}
+
+.movies-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.movies-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.movies-table tbody tr:last-of-type {
+    border-bottom: 2px solid #3498db;
+}
+
+.movies-table tbody tr:hover {
+    background-color: #ddeeff;
+}
